@@ -1,0 +1,19 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.link_list{
+    display: flex;
+}
+
+.link_list_element{
+    margin: 0.5rem;
+}
+
+.image{
+    width: 60px;
+    height: 60px;
+}

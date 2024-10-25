@@ -1,0 +1,230 @@
+.container{
+    border: 1px solid #3A506B;
+    border-radius: 10px;
+    margin: 1rem 17vw;
+
+    overflow: hidden; 
+}
+
+.date_location_container{
+    background-color: #0B132B;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+
+    border-bottom: 1px solid #3A506B;
+
+    overflow: hidden; 
+}
+
+.location_text{
+    color: #3A506B;
+    font-style: italic;
+
+}
+
+.date_text{
+    font-style: italic;
+}
+
+.content_container{
+    border: 1px 0px solid #3A506B;
+    display: flex;
+
+
+    max-width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.thumbnail_container{
+
+    width: 300px;
+    height: 200px;
+    /*border-right: 1px solid #3A506B;*/
+
+
+    display: flex;
+
+    overflow:hidden;
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+.thumbnail{
+    height: 100%;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+.text_container{
+    margin: 0;
+    flex: 1;
+
+    overflow: wrap;
+
+    
+}
+
+.text_skill_container{
+    padding: 1rem;
+    flex: 1;
+    overflow: wrap;
+
+
+    border-left: solid 1px #3A506B;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.subheading{
+    font-size: 1em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.body{
+    
+}
+
+.skill_container{
+    display: flex;
+    margin: 0.25em;
+}
+
+.skill_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.skill_list_element{
+    margin:  0;
+}
+
+.bubble{
+    /*border: 1px solid #0B132B;*/
+    
+    border-radius: 20px;
+    padding: 0rem 0.5em;
+    color: #0B132B;
+
+    background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+
+
+    transition: 0.2s; 
+}
+
+.award_bubble{
+    /*border: 1px solid #0B132B;*/
+    
+    border-radius: 20px;
+    padding: 0 0.5em;
+    color: #0B132B;
+
+    background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+
+
+    transition: 0.2s;
+}
+
+.skill_text{
+    
+}
+
+.bubble:hover{
+    
+    cursor: pointer;
+    transform: scale(1.05);
+    color:white;
+
+    animation-name: changeGreen;
+    animation-duration: 0.3s;
+    
+}
+
+
+.award_bubble:hover{
+    
+    cursor: pointer;
+    transform: scale(1.05);
+    color:white;
+
+    animation-name: changeGold;
+    animation-duration: 0.3s;
+    
+}
+
+
+@keyframes changeGold{
+    0% {
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+    }
+    20%{
+        background: linear-gradient(45deg, #DAB060, white, #CE9F56, #B67D43, #AA6C39);
+    }
+    40%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, white, #B67D43, #AA6C39);
+    }
+    60%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, white, #AA6C39);
+    }
+    80%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39, white);
+    }
+    100%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+    }
+}
+
+@keyframes changeGreen{
+    0%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+    20%{
+        background: linear-gradient(45deg, #b0f0bb, white, #86CB92, #71B48D, #4cbb7a);
+    }
+    40%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, white, #71B48D, #4cbb7a);
+    }
+    60%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, white, #4cbb7a);
+    }
+    80%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a, white,);
+    }
+    100%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+}
+
+
+
+
+@media (max-width: 1200px){
+    .content_container{
+        flex-direction: column;
+    }
+    .text_skill_container{
+        border-top: solid 1px #3A506B;
+        border-left: none;
+    }
+    .skill_container{
+        justify-content: center;
+    }
+    .skill_list{
+        justify-content: center;
+    }
+    .location_text{
+        display: none;
+    }
+}

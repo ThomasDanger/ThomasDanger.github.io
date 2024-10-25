@@ -1,0 +1,42 @@
+.bubble
+{border-radius: 20px;
+    padding: 0rem 0.5em;
+    color: #0B132B;
+
+    background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+
+
+    transition: 0.2s; 
+}
+
+.bubble:hover{
+    
+    cursor: pointer;
+    transform: scale(1.05);
+    color:white;
+
+    animation-name: changeGreen;
+    animation-duration: 0.3s;
+    
+}
+
+@keyframes changeGreen{
+    0%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+    20%{
+        background: linear-gradient(45deg, #b0f0bb, white, #86CB92, #71B48D, #4cbb7a);
+    }
+    40%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, white, #71B48D, #4cbb7a);
+    }
+    60%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, white, #4cbb7a);
+    }
+    80%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a, white,);
+    }
+    100%{
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+}

@@ -1,0 +1,60 @@
+
+
+.frame{
+    width: 400px;
+    height:400px;
+    border-radius: 50%;
+    overflow:hidden;
+    background: linear-gradient(45deg, #A8A9AD, #B4B5B8, #C0C0C3, #D7D7D8);
+    padding: 5px;
+
+    transition: 0.3s ease;
+    
+}
+
+.image{
+    border-radius: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.frame:hover{
+    transform: scale(1.03);
+    animation-name: changeGradient;
+    animation-duration: 0.3s;
+
+    padding: 8px;
+}
+
+.frame:active{
+    transform: scale(0.97);
+}
+
+@keyframes changeGradient{
+    0% {
+        background: linear-gradient(45deg, #A8A9AD, #B4B5B8, #C0C0C3, #D7D7D8);
+    }
+    20%{
+        background: linear-gradient(45deg, #A8A9AD, white, #B4B5B8, #C0C0C3, #D7D7D8);
+    }
+    40%{
+        background: linear-gradient(45deg, #A8A9AD, #B4B5B8, white, #C0C0C3, #D7D7D8);
+    }
+    60%{
+        background: linear-gradient(45deg, #A8A9AD, #B4B5B8, #C0C0C3, white, #D7D7D8);
+    }
+    80%{
+        background: linear-gradient(45deg, #A8A9AD, #B4B5B8, #C0C0C3, #D7D7D8, white);
+    }
+    100%{
+        background: linear-gradient(45deg, #A8A9AD, #B4B5B8, #C0C0C3, #D7D7D8);
+    }
+}
+
+@media (max-width: 800px){
+    .frame{
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,38 @@
+/* styles.css or FilterButton.module.css */
+
+@keyframes changeGreen {
+    0% {
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+    20% {
+        background: linear-gradient(45deg, #b0f0bb, white, #86CB92, #71B48D, #4cbb7a);
+    }
+    40% {
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, white, #71B48D, #4cbb7a);
+    }
+    60% {
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, white, #4cbb7a);
+    }
+    80% {
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a, white);
+    }
+    100% {
+        background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    }
+}
+
+.filterButton {
+    /* Add any common styles for the button */
+    color: #86CB92;
+    transition: 0.3s
+}
+
+/* Apply animation on hover */
+.filterButton:hover {
+    border: 1px solid transparent;
+    animation: changeGreen 0.3s; /* Duration and infinite repeat */
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #b0f0bb, #86CB92, #71B48D, #4cbb7a);
+    color: #0B132B;
+    
+}

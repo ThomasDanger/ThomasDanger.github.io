@@ -1,0 +1,56 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.bubble{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    font-weight: bold;
+    justify-content: center;
+    border: 1px solid;
+    width: 60vw;
+
+    border-radius: 10px;
+    padding: 1rem;
+
+    color: #DAB060;
+    transition: 0.3s
+}
+
+@keyframes changeGold{
+    0% {
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+    }
+    20%{
+        background: linear-gradient(45deg, #DAB060, white, #CE9F56, #B67D43, #AA6C39);
+    }
+    40%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, white, #B67D43, #AA6C39);
+    }
+    60%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, white, #AA6C39);
+    }
+    80%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39, white);
+    }
+    100%{
+        background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+    }
+}
+
+/* Apply animation on hover */
+.button:hover {
+    border: 1px solid transparent;
+    animation: changeGold 0.3s; /* Duration and infinite repeat */
+    transform: scale(1.01);background: linear-gradient(45deg, #DAB060, #CE9F56, #B67D43, #AA6C39);
+    color: #0B132B;
+    
+}

@@ -1,0 +1,296 @@
+{
+    "categories":{
+        "education":
+        [
+            {
+                "id": 1,
+                "heading": "The University of Texas at Dallas",
+                "subheading": "Bachelor of Science - Software Engineering",
+                "body": "Pursuing a BS in Software Engineering with advanced coursework in Embeeded Systems and Machine Learning",
+                "location": "Richardson, TX",
+                "date_start": "2021-08-23",
+                "date_end": "2025-05-15",
+                "awards": ["Collegium V Honors", "Dean's List Spring 2022", "National Merit Scholar"],
+                "thumbnail_src": "thumbnails/utd_monogram.png"
+            }
+        ],
+
+        "experience":
+        [
+            {
+                "id": 1,
+                "heading": "The Department of Materials Science Engineering, The University of Texas at Dallas",
+                "subheading": "Research Assistant - Sim. Metal Contacts to 2D Materials for Transistor Apps.",
+                "location": "Richardson, TX",
+                "date_start": "2023-04-04",
+                "date_end": "2025-08-03",
+                "skills": ["Python", "Linux", "Sci-Kit", "Pandas", "TensorFlow", "FEnICS"],
+                "thumbnail_src": "thumbnails/utd_monogram.png"
+            }
+        ],
+
+        "projects":[
+            {
+                "id": 1,
+                "heading": "TheLab.ms Kiosk/Calendar System (EPICS)",
+                "subheading": "Project Partner Liaison",
+                "body": "Created a kiosk/calendar system created for TheLab.ms at the University of Texas at Dallas done through Engineering Projects in Community Service",
+                "location": "Richardson, TX",
+                "date_start": "2021-08-22",
+                "date_end": "2024-12-07",
+                "skills": ["JavaScript", "TypeScript", "NextJS", "React", "Node.js", "PostgresSQL", "Docker"],
+                "thumbnail_src": "thumbnails/EPICS-Logo.png"
+            },
+            {
+                "id": 2,
+                "heading": "CubeSat 1.3v",
+                "subheading": "In Collaboration with The Department of Materials Science at The Univeristy of Texas at Dallas",
+                "body": "Created and tested mini satellite of the CubeSat 1.3v architecture in collaboration with the Department of Materials Science at the University of Texas at Dallas",
+                "location": "Richardson, TX",
+                "date_start": "2024-06-15",
+                "date_end": "2024-06-22",
+                "skills": ["Python", "RaspberryPI", "Linux", "Signal Processing", "Embedded Systems"],
+                "thumbnail_src": "thumbnails/Sat_WS.JPG"
+            },
+            {
+                "id": 3,
+                "heading": "Exploration of Neural Networks",
+                "subheading": "",
+                "body": "Created Neural Networks of varying architectures and tested their performance across varying applications",
+                "location": "",
+                "date_start": "2024-04-15",
+                "date_end": "2024-05-22",
+                "skills": ["Python", "Tensorflow", "PyTorch", "Keras", "GoogleCollab", "Machine Learning"],
+                "thumbnail_src": "thumbnails/Exploration_of_NN.png"
+            },
+            {
+                "id": 4,
+                "heading": "Tic-Tac-Toe In Assembly",
+                "subheading": "",
+                "body": "Created a Tic-Tac-Toe Program in Assembly",
+                "location": "",
+                "date_start": "2023-04-15",
+                "date_end": "2023-05-22",
+                "skills": ["Assembly", "Assembly (MIPS)"],
+                "thumbnail_src": "thumbnails/TTT_Assembly.png"
+            }
+        ],
+
+        "organizations":
+        [
+            {
+                "id": 1,
+                "heading": "Alpha Phi Omega - AEZ",
+                "subheading": "Vice President of Membership, Pledge Fundraising Officer",
+                "body": "The UT Dallas chapter of Alpha Phi Omega, a community service fraternity dedicated to being a pillar of leadership, friendship, and service",
+                "location": "Richardson, TX",
+                "date_start": "2023-09-23",
+                "date_end": "2025-05-15",
+                "awards": ["125+ Hours of Service"],
+                "thumbnail_src": "/thumbnails/APO-Logo.png"
+            }
+        ],
+
+        "courses":
+        [
+            {
+                "id": 1,
+                "course_name":"Differential Calculus",
+                "skills":["Math", "Calculus I"],
+                "semester":"Fall 2021",
+                "date_start":"2021-08-21"
+            },
+            {
+                "id": 2,
+                "course_name":"Integral Calculus",
+                "skills":["Math", "Calculus II"],
+                "distinction":["A", "Dean's List"],
+                "semester":"Spring 2022",
+                "date_start":"2022-01-21"
+            },
+            {
+                "id": 3,
+                "course_name":"Linear Algebra",
+                "skills":["Math", "Linear Algebra"],
+                "distinction": ["Collegium V Honors", "A"],
+                "semester":"Spring 2023",
+                "date_start":"2023-01-21"
+            },
+            {
+                "id": 4,
+                "course_name":"Multivariable Calculus",
+                "skills":["Math", "Calculus III"],
+                "semester":"Fall 2024",
+                "date_start":"2024-08-21"
+            },
+            {
+                "id": 5,
+                "course_name":"Discrete Math for Computing",
+                "skills":["Math", "Discrete Math", "Data Structures", "Algorithms"],
+                "distinction":["A", "Dean's List"],
+                "semester":"Spring 2022",
+                "date_start":"2022-01-21"
+            },
+            {
+                "id": 6,
+                "course_name":"Mathematical Foundations of Software Engineering",
+                "skills":["Math", "Discrete Math", "Data Structures", "Algorithms"],
+                "distinction": ["A"],
+                "semester":"Fall 2022",
+                "date_start":"2022-08-21"
+            },
+            {
+                "id": 7,
+                "course_name":"Computer Architecture",
+                "skills":["Computer Architecture", "Assembly", "Assembly (MIPS)", "Embedded Systems"],
+                "distinction":["A"],
+                "semester":"Spring 2022",
+                "date_start":"2022-01-21"
+            },
+            {
+                "id": 8,
+                "course_name":"Probability and Statistics in Computer Science",
+                "skills":["Statistics", "Data Science", "Python", "R"],
+                "distinction":["A"],
+                "semester":"Spring 2023",
+                "date_start":"2023-01-21"
+            },
+            {
+                "id": 9,
+                "course_name":"Systems Programming in Unix/Linux",
+                "skills":["Linux", "Unix", "C"],
+                "distinction": ["A"],
+                "semester":"Spring 2023",
+                "date_start":"2023-01-21"
+            },
+            {
+                "id": 10,
+                "course_name":"Digital Logic",
+                "skills":["Electronics", "Circuits", "Circuit Analysis", "Analog Circuits", "Digital Circuits", "Embedded Systems", "HDL", "Verilog"],
+                "semester":"Fall 2023",
+                "date_start":"2023-08-21"
+            },
+            {
+                "id": 11,
+                "course_name":"Digital Systems Lab",
+                "skills":["Electronics", "Circuits", "Circuit Analysis", "Embedded Systems"],
+                "distinction":["A"],
+                "semester":"Fall 2023",
+                "date_start":"2023-08-21"
+            },
+            {
+                "id": 12,
+                "course_name":"Professional and Technical Communication",
+                "skills":["Communication", "Microsoft Office", "Google Suite"],
+                "distinction":["A"],
+                "semester":"Fall 2023",
+                "date_start":"2023-08-21"
+            },
+            {
+                "id": 13,
+                "course_name":"Software Engineering",
+                "skills":["Software Engineering", "Agile", "SDLC"],
+                "distinction":["A"],
+                "semester":"Fall 2023",
+                "date_start":"2023-08-21"
+            },
+            {
+                "id": 14,
+                "course_name":"Operating Systems Concepts",
+                "skills":["Operating Systems", "Linux", "C", "C++", "Embedded Systems"],
+                "semester":"Fall 2023",
+                "distinction": ["A"],
+                "date_start":"2023-08-21"
+            },
+            {
+                "id": 15,
+                "course_name":"Intro to Machine Learning",
+                "skills":["Machine Learning", "Python", "TensorFlow", "PyTorch", "Keras", "LLM", "Google Colab", "Math"],
+                "distinction":["A"],
+                "semester":"Spring 2024",
+                "date_start":"2024-01-21"
+            },
+            {
+                "id": 16,
+                "course_name":"Database Systems",
+                "skills":["SQL", "MySQL", "PostgreSQL"],
+                "distinction":["A"],
+                "semester":"Spring 2024",
+                "date_start":"2024-01-21"
+            },
+            {
+                "id": 17,
+                "course_name":"Software Architecture and Design",
+                "skills":["Software Architecture", "UML", "Cloud Services", "AWS"],
+                "distinction": ["A"],
+                "semester":"Spring 2024",
+                "date_start":"2024-01-21"
+            },
+            {
+                "id": 18,
+                "course_name":"Software Planning and Management",
+                "skills":["Project Management", "Agile", "Waterfall", "SDLC", "Microsoft Office", "Microsoft Project", "Communication"],
+                "semester":"Spring 2024",
+                "date_start":"2024-01-21"
+            },
+            {
+                "id": 19,
+                "course_name":"Embedded Computer Systems",
+                "skills":["Embedded Systems", "C#", "RTOS"],
+                "semester":"Fall 2024",
+                "date_start":"2024-08-21"
+            },
+            {
+                "id": 20,
+                "course_name":"Requirements Engineering",
+                "skills":["Requirements Engineering", "Agile", "UML"],
+                "semester":"Fall 2024",
+                "date_start":"2024-08-21"
+            },
+            {
+                "id": 21,
+                "course_name":"Software Testing, Verification, Validation, and Quality Assurance",
+                "skills":["JUnit", "Testing", "Requirements Engineering", "Quality Assurance"],
+                "semester":"Fall 2024",
+                "date_start":"2024-08-21"
+            },
+            {
+                "id": 22,
+                "course_name":"Data Structures and Algorithmic Analysis",
+                "skills":["Datastructures", "Algorithms", "Java"],
+                "distinction":["A+", "Top Student in Class"],
+                "semester":"Fall 2024",
+                "date_start":"2024-08-21"
+            },
+            {
+                "id": 23,
+                "course_name":"Programming Fundamentals",
+                "skills":["C++"],
+                "semester":"Fall 2021",
+                "date_start":"2021-08-21"
+            },
+            {
+                "id": 24,
+                "course_name":"Computer Science Laboratory",
+                "skills":["C++"],
+                "semester":"Fall 2021",
+                "date_start":"2021-08-21"
+            },
+            {
+                "id": 25,
+                "course_name":"Computer Science I",
+                "skills":["C++"],
+                "semester":"Spring 2022",
+                "date_start":"2022-01-21"
+            },
+            {
+                "id": 26,
+                "course_name":"Computer Science II",
+                "skills":["Java", "Data Structures", "Algorithms"],
+                "semester":"Fall 2022",
+                "date_start":"2022-08-21"
+            }
+
+        ]
+    }
+}
