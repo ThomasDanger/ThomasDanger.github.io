@@ -4,10 +4,23 @@ import React, { useState, useEffect } from 'react';
 import EntryList from './EntryList'; // Adjust the import path as necessary
 import FilterButton from './FilterButton/FilterButton.tsx';
 
-import styles from './EntryListFilter.module.css';
+//import styles from './EntryListFilter.module.css';
 
+interface Entry{
+    heading: string;
+    subheading?: string;
+    body?: string;
+    date_start: string;
+    date_end: string;
+    location?: string;
+    thumbnail_src?: string;
+    awards?: string[];
+    skills?: string[];
+    link?: string;
+}
 interface EntryListFilterProps {
     category: string;
+    num?: number;
 }
 
 
@@ -33,7 +46,7 @@ const EntryListFilter: React.FC<EntryListFilterProps> = ({ category, num }) => {
                 const skillCounts: Record<string, number> = {};
 
                 // Count occurrences of each skill
-                entries.forEach((entry) => {
+                entries.forEach((entry:Entry) => {
                     if (Array.isArray(entry.skills)) {
                         entry.skills.forEach((skill) => {
                             skillCounts[skill] = (skillCounts[skill] || 0) + 1;
@@ -71,8 +84,8 @@ const EntryListFilter: React.FC<EntryListFilterProps> = ({ category, num }) => {
         <div>
             <div>
                 <ul style={{display:'flex', margin:'0 17vw', flexWrap:'wrap', gap:'0.5em'}}>
-                {filterOptions.map((filter) => (
-                    <li style={{margin:'0'}}>
+                {filterOptions.map((filter, index) => (
+                    <li key={index} style={{margin:'0'}}>
                     <FilterButton
                         key={filter}
                         label={filter}

@@ -5,23 +5,31 @@ import React from 'react'
 import styles from './CourseEntry.module.css';
 import FilterButton from '../CourseEntryList/FilterButton/FilterButton.tsx';
 
-interface EntryProps {
-  id: number;
+interface Entry {
+  course_name: string;
+  skills: string[];
+  distinction?: string[];
+  semester: string;
+}
+interface CourseEntryProps {
+  entry: Entry;
+  filters?: string[];
+  toggleFilter: (skill: string) => void;
 }
 
-const CourseEntry = ({entry, filters =[], toggleFilter}) => {
+const CourseEntry: React.FC<CourseEntryProps>= ({entry, filters =[], toggleFilter}) => {
 
   if(!entry){
     return <div>Entry not found</div>;
   }
 
 
-  let course = entry.course_name;
-  let skills = entry.skills;
-  let distinctions = entry.distinction;
-  let semester = entry.semester;
+  const course = entry.course_name;
+  const skills = entry.skills;
+  //let distinctions = entry.distinction;
+  const semester = entry.semester;
 
-
+  /*
   const sortedSkills = Array.isArray(skills)
         ? skills.sort((a, b) => {
               const aInFilter = filters.includes(a);
@@ -29,7 +37,7 @@ const CourseEntry = ({entry, filters =[], toggleFilter}) => {
               return (bInFilter ? 1 : 0) - (aInFilter ? 1 : 0);
           })
         : [];
-
+  */
 
 
   return (

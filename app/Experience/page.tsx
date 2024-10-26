@@ -1,9 +1,9 @@
-import Image from "next/image";
+//import Image from "next/image";
 
 import Navbar from '../components/Navbar/Navbar.js';
-import Entry from '../components/Entry/Entry.js';
-import HomePage from '../components/HomePage/HomePage.js';
-import EntryList from '../components/EntryList/EntryList.tsx';
+//import Entry from '../components/Entry/Entry.js';
+//import HomePage from '../components/HomePage/HomePage.js';
+//import EntryList from '../components/EntryList/EntryList.tsx';
 
 import EntryListFilter from '../components/EntryList/EntryListFilter.tsx';
 

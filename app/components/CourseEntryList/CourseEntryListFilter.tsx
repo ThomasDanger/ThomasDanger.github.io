@@ -4,20 +4,19 @@ import React, { useState, useEffect } from 'react';
 import CourseEntryList from './CourseEntryList.tsx'; // Adjust the import path as necessary
 import FilterButton from './FilterButton/FilterButton.tsx';
 
-import styles from './EntryListFilter.module.css';
 
-interface EntryListFilterProps {
-    category: string;
+interface Entry {
+    skills?: string[]; // Optional array of skills
+    // Add other properties as needed
 }
 
 
-
-const EntryListFilter: React.FC<EntryListFilterProps> = () => {
+const EntryListFilter = () => {
 
     const [filters, setFilters] = useState<string[]>([]);
     const [filterOptions, setFilterOptions] = useState<string[]>([]);
 
-    const [entries, setEntries] = useState<any[]>([]); // State to hold the entries
+    //const [entries, setEntries] = useState<any[]>([]); // State to hold the entries
 
 
     useEffect(() => {
@@ -37,9 +36,9 @@ const EntryListFilter: React.FC<EntryListFilterProps> = () => {
                 const skillCounts: Record<string, number> = {};
 
                 // Count occurrences of each skill
-                entries.forEach((entry) => {
+                entries.forEach((entry: Entry) => {
                     if (Array.isArray(entry.skills)) {
-                        entry.skills.forEach((skill) => {
+                        entry.skills.forEach((skill: string) => {
                             skillCounts[skill] = (skillCounts[skill] || 0) + 1;
                         });
                     }
@@ -75,8 +74,8 @@ const EntryListFilter: React.FC<EntryListFilterProps> = () => {
         <div>
             <div>
                 <ul style={{display:'flex', margin:'1em 17vw', flexWrap:'wrap', gap:'0.5em'}}>
-                {filterOptions.map((filter) => (
-                    <li style={{margin:'0'}}>
+                {filterOptions.map((filter, index) => (
+                    <li key={index} style={{margin:'0'}}>
                     <FilterButton
                         label={filter}
                         isActive={filters.includes(filter)}

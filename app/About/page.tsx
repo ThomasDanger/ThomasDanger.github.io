@@ -1,12 +1,12 @@
-import Image from "next/image";
+//import Image from "next/image";
 
 import Navbar from '../components/Navbar/Navbar.js';
-import Entry from '../components/Entry/Entry.js';
-import HomePage from '../components/HomePage/HomePage.js';
+//import Entry from '../components/Entry/Entry.js';
+//import HomePage from '../components/HomePage/HomePage.js';
 import EntryList from '../components/EntryList/EntryList.tsx';
 
-import CourseEntry from '../components/CourseEntry/CourseEntry.tsx';
-import CourseEntryListFilter from '../components/CourseEntryList/CourseEntryListFilter.tsx';
+//import CourseEntry from '../components/CourseEntry/CourseEntry.tsx';
+//import CourseEntryListFilter from '../components/CourseEntryList/CourseEntryListFilter.tsx';
 
 import ToggleCourseEntryList from '../components/CourseEntryList/ToggleCourseEntryList.tsx';
 import Footer from '../components/Footer/Footer.js'

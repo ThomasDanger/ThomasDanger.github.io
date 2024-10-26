@@ -7,8 +7,22 @@ import FilterButton from '../CourseEntryList/FilterButton/FilterButton.tsx';
 //import entries from '/public/data/entries.json';
 
 
+interface Entry{
+    heading: string;
+    subheading?: string;
+    body?: string;
+    date_start: string;
+    date_end: string;
+    location?: string;
+    thumbnail_src?: string;
+    awards?: string[];
+    skills?: string[];
+    link?: string;
+}
 interface EntryProps {
-    id: number;
+    entry: Entry;
+    filters?: string[];
+    toggleFilter: (skill: string) => void;
 }
 
 function formatDate(dateString: string) {
@@ -34,17 +48,18 @@ const Entry: React.FC<EntryProps> = ({entry, filters=[], toggleFilter}) => {
 
 
 
-    let heading = entry.heading;
-    let subheading = entry.subheading;
-    let body = entry.body;
-    let date_start = formatDate(entry.date_start);
-    let date_end = formatDate(entry.date_end);
-    let location = entry.location;
-    let thumbnail_src = (entry.thumbnail_src)? entry.thumbnail_src : '/photos/PhotoWithFriends.jpg';
-    let awards = entry.awards;
-    let skills = entry.skills;
-    let link = ['./'];
+    const heading = entry.heading;
+    const subheading = entry.subheading;
+    const body = entry.body;
+    const date_start = formatDate(entry.date_start);
+    const date_end = formatDate(entry.date_end);
+    const location = entry.location;
+    const thumbnail_src = (entry.thumbnail_src)? entry.thumbnail_src : '/photos/PhotoWithFriends.jpg';
+    const awards = entry.awards;
+    const skills = entry.skills;
+    //const link = ['./'];
 
+    /*
     const sortedSkills = Array.isArray(skills)
     ? skills.sort((a, b) => {
           const aInFilter = filters.includes(a);
@@ -52,6 +67,8 @@ const Entry: React.FC<EntryProps> = ({entry, filters=[], toggleFilter}) => {
           return (bInFilter ? 1 : 0) - (aInFilter ? 1 : 0);
       })
     : [];
+
+    */
 
   return (
 
