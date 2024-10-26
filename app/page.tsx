@@ -1,8 +1,9 @@
 import Navbar from './components/Navbar/Navbar.js';
+import MobileNavBar from './components/Navbar/MobileNavBar.tsx';
 import EntryList from './components/EntryList/EntryList';
 import HomePage from './components/HomePage/HomePage.js';
 
-import MobileNavBar from './components/NavBar/MobileNavBar.tsx';
+
 
 import styles from './page.module.css';
 
