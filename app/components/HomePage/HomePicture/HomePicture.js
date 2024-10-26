@@ -7,7 +7,7 @@ import styles from './HomePicture.module.css';
 const HomePicture = () => {
   return (
     <div className={styles.frame}>
-        <Image className={styles.image} width={400} height={400} alt="headshot" src='/photos/Headshot.jpg'/>
+        <Image className={styles.image} width={400} height={400} alt="headshot" src='/photos/Headshot.JPG'/>
     </div>
   )
 }
