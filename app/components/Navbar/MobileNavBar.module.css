@@ -49,3 +49,10 @@
     padding: 0.25rem 4rem;
     border-radius: 10px;
 }
+
+
+@media (min-width: 800px){
+    .container{
+        display: none;
+    }
+}
