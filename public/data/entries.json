@@ -11,7 +11,7 @@
                 "date_start": "2021-08-23",
                 "date_end": "2025-05-15",
                 "awards": ["Collegium V Honors", "Dean's List Spring 2022", "National Merit Scholar"],
-                "thumbnail_src": "thumbnails/utd_monogram.png"
+                "thumbnail_src": "/thumbnails/utd_monogram.png"
             }
         ],
 
@@ -25,7 +25,7 @@
                 "date_start": "2023-04-04",
                 "date_end": "2025-08-03",
                 "skills": ["Python", "Linux", "Sci-Kit", "Pandas", "TensorFlow", "FEnICS"],
-                "thumbnail_src": "thumbnails/utd_monogram.png"
+                "thumbnail_src": "/thumbnails/utd_monogram.png"
             }
         ],
 
@@ -39,7 +39,7 @@
                 "date_start": "2021-08-22",
                 "date_end": "2024-12-07",
                 "skills": ["JavaScript", "TypeScript", "NextJS", "React", "Node.js", "PostgresSQL", "Docker"],
-                "thumbnail_src": "thumbnails/EPICS-Logo.png"
+                "thumbnail_src": "/thumbnails/EPICS-Logo.png"
             },
             {
                 "id": 2,
@@ -50,7 +50,7 @@
                 "date_start": "2024-06-15",
                 "date_end": "2024-06-22",
                 "skills": ["Python", "RaspberryPI", "Linux", "Signal Processing", "Embedded Systems"],
-                "thumbnail_src": "thumbnails/Sat_WS.JPG"
+                "thumbnail_src": "/thumbnails/Sat_WS.JPG"
             },
             {
                 "id": 3,
@@ -61,7 +61,7 @@
                 "date_start": "2024-04-15",
                 "date_end": "2024-05-22",
                 "skills": ["Python", "Tensorflow", "PyTorch", "Keras", "GoogleCollab", "Machine Learning"],
-                "thumbnail_src": "thumbnails/Exploration_of_NN.png"
+                "thumbnail_src": "/thumbnails/Exploration_of_NN.png"
             },
             {
                 "id": 4,
@@ -72,7 +72,7 @@
                 "date_start": "2023-04-15",
                 "date_end": "2023-05-22",
                 "skills": ["Assembly", "Assembly (MIPS)"],
-                "thumbnail_src": "thumbnails/TTT_Assembly.png"
+                "thumbnail_src": "/thumbnails/TTT_Assembly.png"
             }
         ],
 

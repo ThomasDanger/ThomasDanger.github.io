@@ -1,7 +1,6 @@
 import React from 'react'
 
 import styles from './Entry.module.css';
-
 import FilterButton from '../CourseEntryList/FilterButton/FilterButton.tsx';
 
 //import entries from '/public/data/entries.json';
@@ -54,7 +53,7 @@ const Entry: React.FC<EntryProps> = ({entry, filters=[], toggleFilter}) => {
     const date_start = formatDate(entry.date_start);
     const date_end = formatDate(entry.date_end);
     const location = entry.location;
-    const thumbnail_src = (entry.thumbnail_src)? entry.thumbnail_src : '/photos/PhotoWithFriends.jpg';
+    const thumbnail_src = (entry.thumbnail_src)? entry.thumbnail_src : '/';
     const awards = entry.awards;
     const skills = entry.skills;
     //const link = ['./'];
@@ -85,7 +84,7 @@ const Entry: React.FC<EntryProps> = ({entry, filters=[], toggleFilter}) => {
         <div className={styles.content_container}>
         
             <div className={styles.thumbnail_container}>
-                <img src={thumbnail_src}></img>
+                <img alt="thumbnail"src={thumbnail_src}/>
             </div>
 
             <div className={styles.text_skill_container}>
