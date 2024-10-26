@@ -227,4 +227,14 @@
     .location_text{
         display: none;
     }
+    .heading{
+        text-align: center;
+    }
+    .subheading{
+        text-align: center;
+    }
+    .body{
+        margin: 1em 1em;
+        text-align: center;
+    }
 }
