@@ -6,17 +6,78 @@ body{
     padding: 0;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, ul, li{
     margin: 0;
     padding: 0;
-    background-color: red;
 }
 
 .nav-container{
+    display: flex;
+    justify-content: space-between;
     background-color: #0B132B;
+
+    align-items: center;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+.nav-home-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-home-container:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav-home-icon{
+    height: 2.5em;
+    width: 2.5em;
+    margin-right: 0.5em
 }
 
 .nav-link-list{
     display: flex;
     list-style-type: none;
+}
+
+.nav-link-list-element{
+    margin: 0 0.25em 0 0.25em;
+}
+
+.nav-link-list-element:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.name-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box{
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.contact-box-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact{
+    font-weight: 100;
+    font-style: italic;
 }
