@@ -1,83 +1,131 @@
 body{
-    background-color: #1C2541;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+    background-color: #0D0221;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
 }
 
-h1, h2, h3, h4, p, ul, li{
+h1,h2,h3,h4, li, ul{
     margin: 0;
     padding: 0;
+    font-size: 1em;
+    font-weight: 500;
 }
 
-.nav-container{
+
+.nav{
+    padding: 5vh 17vw 0 17vw;
     display: flex;
     justify-content: space-between;
-    background-color: #0B132B;
-
     align-items: center;
-    padding: 0.5em 1.5em 0.5em 1.5em;
-}
-.nav-home-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
-.nav-home-container:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.nav-home-icon{
-    height: 2.5em;
-    width: 2.5em;
-    margin-right: 0.5em
-}
-
-.nav-link-list{
+.nav-list{
     display: flex;
+    justify-content: right;
     list-style-type: none;
 }
 
-.nav-link-list-element{
-    margin: 0 0.25em 0 0.25em;
+.nav-link{
+    color: white;
+    text-decoration: none;
 }
 
-.nav-link-list-element:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.nav-list-element{
+    margin: 0 0.5em;
 }
 
-.name-contact{
+.nav-name{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.nav-name:hover,.nav-list-element:hover{
+    border-bottom: inset 3px;
+    cursor:pointer;
+    transition: 0.1s;
+}
+
+.image-frame{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 0 0 50%;
+
+    box-shadow: 0.4em -0.4em 0em 0.4em #DD1155,
+                -0.4em 0.4em 0em 0.4em #CEFF1A
+    ;
+
+    /*
+    border-radius: 50%;
+    border: 5px solid #DD1155;
+    
+
+    box-shadow: 0 0.5em 1em 0.01em black;
+    */
+}
+
+.image-frame:hover{
+    box-shadow: 0.6em -0.6em 0em 0.6em #DD1155,
+                -0.6em 0.6em 0em 0.6em #CEFF1A
+    ;
+    transition: 0.3s;
+
+
+    border: turquoise 2px ;
+}
+
+.image-frame:active{
+    -ms-transform-origin-x: 10rem;
+    box-shadow: 0.3em -0.3em 0em 0.3em #DD1155,
+                -0.3em 0.3em 0em 0.3em #CEFF1A
+    ;
+    transition: 0.3s;
+}
+
+.image{
+    height: auto;
+    width: 150%
+}
+
+.image:hover{
+    width:200%;
+    transition: 0.3s;
+}
+/*
+.image-frame:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.image-frame:active{
+    transform: scale(0.97);
+    transition: 0.2s;
+}
+*/
+
+
+.content{
+    margin: 10vh 20vw 0 20vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact-box{
-    border: 1px solid white;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mission-statement{
+    margin: 1em 1em;
 
+    font-size: 1.4em;
 
-}
-
-.contact-box-list{
-    list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-}
-
-.contact{
-    font-weight: 100;
-    font-style: italic;
+    align-content: center;
 }

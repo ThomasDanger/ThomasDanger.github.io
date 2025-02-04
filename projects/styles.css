@@ -1,0 +1,134 @@
+body{
+    background-color: #0D0221;
+    color: white;
+    font-family: 'Roboto';
+}
+
+h1,h2,h3,h4, li, ul{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+.nav{
+    padding: 10vh 5vw 0em 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-element{
+    margin: 0 0.5em;
+}
+
+.nav-name:hover,.nav-list-element:hover{
+    border-bottom: inset 3px #DD1155;
+    cursor:pointer;
+    transition: 0.1s;
+}
+
+
+.content{
+    margin: 10vh 10vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-list {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-list-element{
+    list-style-type: none;
+    margin: 1em 0.5em;
+}
+
+
+.project-card{
+    overflow: hidden;
+    width: 300px;
+    border: 1px solid #CEFF1A;
+    border-radius: 20px;
+    
+}
+
+.project-card:hover{
+    translate: 0 -5px;
+    transition: 0.5s;
+
+    box-shadow: 0px 5px 20px black ;
+}
+
+.thumbnail-container{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid #CEFF1A;
+}
+
+.thumbnail{
+    width:auto;
+    height: 100%;
+}
+
+.text-container{
+    padding: 0.5em 1em;
+}
+
+.bubble-container{
+    padding: 0.5em 1em;
+}
+
+.bubble-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble{
+    border: 1px solid #CEFF1A;
+    border-radius: 20px;
+    padding: 0.25em 0.5em;
+    margin: 0.1em 0.1em;
+}
+
+.bubble-text{
+    color: #CEFF1A;
+    font-weight: 100;
+
+    font-size: 0.8em;
+
+}
+
+
+
+
