@@ -1,8 +1,7 @@
 body{
     background-color: #161616;
-    color: #f4f4f4;
-    /*font-family: 'Roboto';*/
-    font-family: 'IBM PLEX SANS';
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Sans';
 }
 
 h1,h2,h3,h4, li, ul, p{
@@ -10,6 +9,10 @@ h1,h2,h3,h4, li, ul, p{
     padding: 0;
     font-size: 1em;
     font-weight: 300;
+}
+p{
+    margin: 0;
+    font-size: 1em;
 }
 
 
@@ -39,7 +42,6 @@ h1,h2,h3,h4, li, ul, p{
 .nav-name{
     font-size: 1.2em;
     font-weight: 900;
-
     border-bottom: 3px solid #161616;
 }
 
@@ -49,43 +51,89 @@ h1,h2,h3,h4, li, ul, p{
     transition: 0.1s;
 }
 
-
 .content{
-    margin: 4em 20vw;
-
-
+    margin: 4em 20vw 5em 20vw;
 }
 
-.watermark{
-    height:30px;
-    position: absolute;
-    bottom: 0.1em;
-    right: 0.1em;
+.content-text{
+    margin-right: 40%;
 }
 
-.project-list {
+.section-header{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.section-subheader{
+    margin: 2em 0 1em 0;
+
+    font-size: 1.5em;
+}
+
+.image-frame-1{
+    width: 100%;
+    height: 150px; 
+    overflow:hidden;
+
     display: flex;
-    flex-wrap: wrap;
-
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
+    justify-content: center;
+    align-content: center;
 }
 
-.project-list-element{
-    list-style-type: none;
-    width: 32%;
-    margin: 1em 0.1em;
+.main-image-frame{
+    height: 200px;
+    width: 30%;
+    background-color: aqua;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; 
 }
 
+.main-image{
+    height: 150%;
+}
+
+.external-links-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.external-link{
+    margin: 1.5em;
+}
+
+.external-link-icon{
+    width:20px;
+    height: 20px;
+}
+
+.external-link:hover{
+    cursor:pointer;
+}
+
+.mission-statement{
+    width: 60%;
+    padding: 1em 1em 1em 1em;
+}
+
+.mission-tab{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #262626; 
+    margin-bottom: 2em; 
+    padding: 0;
+}
 
 .project-card{
+    width: 25%;
     overflow: hidden;
     /*border: 1px solid #a8a8a8;
-    border-radius: 20px;*/
+    border-radius: 20px;
+    */
     background-color: #262626;
-    height: 100%;
-
+    margin: 0.1em;
     
 }
 
@@ -125,7 +173,7 @@ h1,h2,h3,h4, li, ul, p{
 
 .position{
     color: #a8a8a8; 
-    font-weight: 300; 
+    font-weight: 300;
     margin-bottom: 1em;
 }
 
@@ -147,7 +195,7 @@ h1,h2,h3,h4, li, ul, p{
 }
 
 .thumbnail{
-    width: 150%;
+    width: 90%;
     object-fit: cover;
 }
 
@@ -156,13 +204,14 @@ h1,h2,h3,h4, li, ul, p{
 }
 
 .bubble-container{
-    padding: 0.5em 1em;
     height: 100%;
+    padding: 0.5em 1em;
 }
 
 .bubble-list{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .bubble{
@@ -180,25 +229,12 @@ h1,h2,h3,h4, li, ul, p{
 
 }
 
+.project-list{
+    margin:2em 0 1em 0;
 
-.external-links-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
 }
 
-.external-link{
-    margin: 1.5em;
-}
-
-.external-link-icon{
-    width:20px;
-    height: 20px;
-}
-
-.external-link:hover{
-    cursor:pointer;
-}
 
 
 @media(max-width: 1000px){
@@ -220,17 +256,17 @@ h1,h2,h3,h4, li, ul, p{
         margin: 10vh 20vw
     }
 
-
-
     .content-text{
         margin-right: 5vw;
     }
 
-    .project-list-element{
-        width: 100%
+    .main-image-frame{
+        display: none;
+    }
+
+    .mission-statement{
+        width: 100%;
+        padding-right: 1em;
     }
 
 }
-
-
-

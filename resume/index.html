@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Resume - Thomas Conner</title>
     <link href="./styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="nav">
         <h1 class="nav-name"><a href="../" class="nav-link">Thomas Conner</a></h1>
         <ul class="nav-list">
-            <li class="nav-list-element" style="border-color:#CEFF1A;">
+            <li class="nav-list-element" style="border-color:#e8daff;">
                 <a class="nav-link" href="../projects/">Projects</a>
             </li>
-            <li class="nav-list-element" style="border-color:#DD1155; border-bottom: 3px solid #DD1155;">
-                <a class="nav-link" style="font-weight: 600;" href="../resume/">Resume/CV</a>
+            <li class="nav-list-element" style="border-color:#be95ff; border-bottom: 3px solid #be95ff;">
+                <a class="nav-link" style="font-weight: 400;" href="../resume/">Resume/CV</a>
             </li>
-            <li class="nav-list-element" style="border-color:#0E6BA8;">Contact</li>
-            <li class="nav-list-element" style="border-color:#CB9CF2;">About</li>
+            <li class="nav-list-element" style="border-color:#e8daff;">
+                <a class="nav-link" href="../contact/">Contact</a>
+            </li>
+            <li class="nav-list-element" style="border-color:#e8daff;">
+                <a class="nav-link" href="../about/">About</a>
+            </li>
         </ul>
     </div>
 
@@ -28,22 +32,20 @@
     <div class="content">
         <div class="section">
             <h1 class="section-header">Education</h1>
-            <div class="timeline-container" style="border-color: #DD1155; background-color: #dd115509;">
+            <div class="timeline-container">
 
                 <div class="institution-container">
-                    <h1 class="institition-name">The University of Texas at Dallas</h1>
-                    <h1 class="degree-name">Bachelors of Science, Software Engineering</h1>
-                    <h1 class="date">Aug. 2021 - May 2025</h1>
+
+                    <div class="place-time-container">
+                        <h1 class="institition-name">The University of Texas at Dallas</h1>
+                        <h1 class="date">May 2025 (Expected)</h1>
+                    </div>
+                    <div class="place-time-container">
+                        <h1 class="degree-name">Bachelor of Science, Software Engineering</h1>
+                        <h1 class="date">GPA: 3.77</h1>
+                    </div>
 
                     <ul class="entry-list">
-                        <li class="entry-list-element">
-                            <p class="entry-body">GPA: 3.767</p>
-                        </li>
-                        <li class="entry-list-element">
-                            <p class="entry-body">Coursework: Computer Networks, Programming in a Unix/Linux Environment, Operating Systems, 
-                                Embedded Systems, Databases, Object-Oriented Programming, Linear Algebra, 
-                                Differential Equations</p>
-                        </li>
                         <li class="entry-list-element">
                             <p class="entry-body">Achievements: Undergraduate Research Fellowship, University Honors, Dean's List</p>
                         </li>
@@ -52,43 +54,50 @@
             </div>
         </div>
 
-
         <div class="section">
             <h1 class="section-header">Experience</h1>
-            <div class="timeline-container" style="border-color: #CEFF1A; background-color: #cdff1a09;">
-                <div class="institution-container">
-                    <h1 class="institition-name">Department of Computer Science, The University of Texas at Dallas</h1>
-                    <h1 class="degree-name">Student Grader</h1>
-                    <h1 class="date" style="color:#CEFF1A">Jan. 2025 - Present</h1>
-                
-                    <ul class="entry-list">
-                        <li class="entry-list-element">
-                            <p class="entry-body">Performed reviews to gage correctness, efficiency, and integrity of submitted code</p>
-                        </li>
-                    </ul>
-                
-                </div>
+            <div class="timeline-container">
 
                 <div class="institution-container">
-                    <h1 class="institition-name">Materials Science Lab, The University of Texas at Dallas</h1>
-                    <h1 class="degree-name">Undergraduate Research Assistant</h1>
-                    <h1 class="date" style="color:#CEFF1A">Apr. 2023 - Aug. 2024</h1>
+
+                    <h1 class="institition-name">The University of Texas at Dallas</h1>
+
+                    <div class="place-time-container">
+                        <h1 class="degree-name">Computer Science Grader</h1>
+                        <h1 class="date">Jan 2025 - Present</h1>
+                    </div>
+                    
+                    
+                    <ul class="entry-list">
+                        <li class="entry-list-element">
+                            <p class="entry-body">Evaluated Java and C++ code for correctness, efficiency, and academic integrity</p>
+                        </li>
+                    </ul>
+
+
+
+
+                    <div class="place-time-container">
+                        <h1 class="degree-name">Undergraduate Research Assistant</h1>
+                        <h1 class="date">Apr 2023 - Aug 2024</h1>
+                    </div>
+                    
                 
                     <ul class="entry-list">
                         <li class="entry-list-element">
-                            <p class="entry-body">Implemented ML models to estimate simulations in <1% of original time with standard error of 5%</p>
+                            <p class="entry-body">Implemented ML models that reduced simulation runtime by 99%, maintaining standard error of 5%</p>
                         </li>
                         <li class="entry-list-element">
-                            <p class="entry-body">Developed custom graphs using Matplotlib to display data in >5 dimensions</p>
+                            <p class="entry-body">Designed custom Matplotlib visualizations to represent high-dimensional data (5+ dimensions)</p>
                         </li>
                         <li class="entry-list-element">
-                            <p class="entry-body">Refactored codebase and added enhanced documentation</p>
+                            <p class="entry-body">Refactored and documented legacy codebase, improving readability and maintainability</p>
                         </li>
                         <li class="entry-list-element">
-                            <p class="entry-body">Performed version migration on inherited codebase to support new versions of libraries</p>
+                            <p class="entry-body">Upgraded codebase to ensure compatibility with the latest library versions</p>
                         </li>
                         <li class="entry-list-element">
-                            <p class="entry-body">Created Python and Bash scripts to automate simulations from Linux command line</p>
+                            <p class="entry-body">Automated simulation workflows with Python and Bash scripts for seamless execution on Linux</p>
                         </li>
 
 
@@ -101,40 +110,125 @@
             </div>
         </div>
 
+        <div class="section">
+            <h1 class="section-header">Projects</h1>
+
+            <div class="project-list">
+                <div class="project-card">
+                    <div class="thumbnail-container">
+                        <img class = "thumbnail" src = "../public/ProjectDemos/ARGO.png">
+                    </div>
+                    <div class = "text-container">
+                        <h1 class="header">Argo Marketing Intelligence Platform</h1>
+                        <h2 class="position">Developer</h2>
+                    
+                        <p class="body">Marketing Intelligence Platform for Argo Data in Richardson, TX</p>
+                    
+                    </div>
+
+                    <div class = "bubble-container">
+                        <ul class="bubble-list">
+                            <div class="bubble">
+                                <h1 class="bubble-text">LLM</h1>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="thumbnail-container">
+                        <img class = "thumbnail" src = "../public/ProjectDemos/CometCupboardDemo.png">
+                    </div>
+                    <div class = "text-container">
+                        <h1 class="header">Comet Cupboard Inventory System</h1>
+                        <h2 class="position">Developer, Project Partner Liaison</h2>
+                    
+                        <p class="body" style ="margin:0; font-weight: 300;">An inventory tracking web application for a non-profit food pantry in Richardson, TX</p>
+                    </div>
+    
+                    <div class = "bubble-container">
+                        <ul class="bubble-list">
+                            <div class="bubble">
+                                <h1 class="bubble-text">NuxtJS</h1>
+                            </div>
+                            <div class="bubble">
+                                <h1 class="bubble-text">VueJS</h1>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="thumbnail-container">
+                        <img class = "thumbnail" src = "../public/ProjectDemos/TheLabDemo.png">
+                    </div>
+                    <div class = "text-container">
+                        <h1 class="header">TheLab.ms Kiosk/Calendar System</h1>
+                        <h2 class="position">Developer, Project Partner Liaison</h2>
+                    
+                        <p class = "body" style ="margin:0; font-weight: 300;">A kiosk/calendar application for a non-profit makerspace in Plano, TX</p>
+                    
+                    </div>
+
+                    <div class = "bubble-container">
+                        <ul class="bubble-list">
+                            <div class="bubble">
+                                <h1 class="bubble-text">NextJS</h1>
+                            </div>
+                            <div class="bubble">
+                                <h1 class="bubble-text">JavaScript</h1>
+                            </div>
+                            <div class="bubble">
+                                <h1 class="bubble-text">PostgreSQL</h1>
+                            </div>
+                            <div class="bubble">
+                                <h1 class="bubble-text">Docker</h1>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <p style="font-size:0.8em;">For more projects, check out my <a style="color:#78a9ff" href="../projects/">project page</a> (or my <a href="https://github.com/ThomasDanger" style="color: #78a9ff">GitHub</a> if you're really brave)</p>
+
+        </div>
+
 
         <div class="section">
-            <h1 class="section-header">Extracurriculars</h1>
-            <div class="timeline-container" style="border-color: #0E6BA8; background-color: #0e6aa80b;">
+            <h1 class="section-header">Extracurricular</h1>
+            <div class="timeline-container">
                 
                 <div class="institution-container">
+                    
                     <h1 class="institition-name">Engineering Projects in Community Service (EPICS)</h1>
-                    <h1 class="degree-name">Project Partner Liaison - TheLab.ms Calendar/Kiosk System</h1>
-                    <h1 class="date" style="color:#0E6BA8">Aug. 2024 - Dec. 2024</h1>
+                    
+                    <div style="display:flex; justify-content: space-between;">
+                        <h1 class="degree-name"> Comet Cupboard Inventory Tracking System</h1>
+                        <h1 class="date">Jan 2025 - May 2025</h1>
+                    </div>
                 
                     <ul class="entry-list">
                         <li class="entry-list-element">
-                            <p class="entry-body">Replaced database with custom APIs, creating more modular endpoints to project partner's database</p>
-                        </li>
-                        <li class="entry-list-element">
-                            <p class="entry-body">Integrated USB RFID/Card Reader component to kiosk system</p>
-                        </li>
-                        <li class="entry-list-element">
-                            <p class="entry-body">Refactored codebase to adhere to industry standards and updated user-interface to make more responsive</p>
-                        </li>
-                        <li class="entry-list-element">
-                            <p class="entry-body">Achievements: Presented at EPICS Synopsium</p>
-                        </li>
-                    </ul>
-
-                    <h1 class="degree-name">TBD Position - TBD Project</h1>
-                    <h1 class="date" style="color:#0E6BA8">Sept. 2023 - Dec. 2023</h1>
-                
-                    <ul class="entry-list">
-                        <li class="entry-list-element">
-                            <p class="entry-body">NOT STARTED</p>
+                            <p class="entry-body">see <a href="../projects/">projects</a></p>
                         </li>
                         
                     </ul>
+                    
+                    <div style="display:flex; justify-content: space-between;">
+                        <h1 class="degree-name" >TheLab.ms Calendar/Kiosk System - Project Partner Liaison</h1>
+                        <h1 class="date">Aug 2024 - Dec 2024</h1>
+                    </div>
+                    
+                    <ul class="entry-list">
+                        <li class="entry-list-element">
+                            <p class="entry-body">see <a href="../projects/">projects</a></p>
+                        </li>
+                        
+                    </ul>
+
+                    
                 
                 
                 </div>
@@ -142,8 +236,11 @@
                 
                 <div class="institution-container">
                     <h1 class="institition-name">Alpha Phi Omega</h1>
-                    <h1 class="degree-name">Vice President of Membership</h1>
-                    <h1 class="date" style="color:#0E6BA8">Dec. 2023 - May 2024</h1>
+                    <div style= "display:flex; justify-content: space-between;">
+                        <h1 class="degree-name" >Vice President of Membership</h1>
+                        <h1 class="date">Dec. 2023 - May 2024</h1>
+                    </div>
+                    
                 
                     <ul class="entry-list">
                         <li class="entry-list-element">
@@ -160,9 +257,11 @@
                         </li>
                     </ul>
 
-                    <h1 class="degree-name">Pledge Fundraising Officer</h1>
-                    <h1 class="date" style="color:#0E6BA8">Sept. 2023 - Dec. 2023</h1>
-                
+                    <div style="display:flex; justify-content: space-between;">
+                        <h1 class="degree-name">Pledge Fundraising Officer</h1>
+                        <h1 class="date">Sept. 2023 - Dec. 2023</h1>
+                    </div>
+
                     <ul class="entry-list">
                         <li class="entry-list-element">
                             <p class="entry-body">Organized Pledge Fundraising event</p>
@@ -174,8 +273,11 @@
                             <p class="entry-body">Achievements: Increased fundraising profits by 20% compared to previous fundraisers</p>
                         </li>
                     </ul>
-                    <h1 class="degree-name">Active Member</h1>
-                    <h1 class="date" style="color:#0E6BA8">May 2024 - Present</h1>
+
+                    <div style="display:flex; justify-content: space-between;">
+                        <h1 class="degree-name">Active Member</h1>
+                        <h1 class="date">May 2024 - Present</h1>
+                    </div>
                 
                     <ul class="entry-list">
                         <li class="entry-list-element">
@@ -191,10 +293,26 @@
             </div>
         
         </div>
+    </div>
 
-
-
-
+    <div class="external-links-container">
+        <ul class="external-links-list">
+            <div>
+                <a class="external-link" href="https://www.linkedin.com/in/thomasconnerse/"><div class="external-link-icon">
+                    <img src="../public/Brand-Logos/In-White-96@2x.png" class="external-link-icon">
+                </div></a>
+            </div>
+            <div>
+                <a class="external-link" href="https://github.com/ThomasDanger"><div class="external-link-icon">
+                    <img src="../public/Brand-Logos/github-mark-white.svg" class="external-link-icon">
+                </div></a>
+            </div>
+            <div>
+                <a class="external-link" href="mailto:thomasconnerse@gmail.com"><div class="external-link-icon">
+                    <img src="../public/Brand-Logos/connerse_logo.png" class="external-link-icon">
+                </div></a>
+            </div>
+        </ul>
     </div>
 
 
