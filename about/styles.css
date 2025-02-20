@@ -257,16 +257,49 @@ p{
     }
 
     .content-text{
-        margin-right: 5vw;
+        margin-right: 10vw;
+    }
+
+    .mission-tab{
+        flex-direction: column-reverse;
     }
 
     .main-image-frame{
-        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-image{
+        width: 100%;
+        height: auto;
     }
 
     .mission-statement{
-        width: 100%;
+        width: 85%;
         padding-right: 1em;
     }
+
+    .project-list{
+        flex-direction: column;
+    }
+
+    .project-card{
+        width: 100%;
+    }
+
+    .thumbnail-container{
+        height: 50px;
+        width: auto;
+        justify-content: left;
+        padding: 1em;
+    }
+
+    .thumbnail{
+        height: 100%;
+        width: auto;
+    }
+
+    .bubble-container{
+        display: none;
+    } 
 
 }

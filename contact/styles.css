@@ -1,7 +1,7 @@
 body{
     background-color: #161616;
     color: rgb(255, 255, 255);
-    font-family: 'Roboto';
+    font-family: 'IBM Plex Sans';
 }
 
 h1,h2,h3,h4, li, ul, p{
@@ -17,7 +17,7 @@ p{
 
 
 .nav{
-    padding: 5vh 17vw 0 17vw;
+    padding: 5vh 20vw 0 20vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ p{
 }
 
 .content{
-    margin: 10vh 25vw;
+    margin: 10vh 20vw;
 }
 
 .contact-form{
@@ -81,3 +81,28 @@ input[type=text]{
     color: white;
 }
 
+
+@media(max-width: 1000px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+    .place-time-container{
+        flex-direction: column;
+    }
+
+    .degree-name{
+        color: #FFFFFF;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-list-element{
+        margin: 0.2em 0;
+    }
+}

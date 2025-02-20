@@ -261,8 +261,8 @@ h1,h2,h3,h4, li, ul, p{
         flex-direction: column;
     }
 
-    .date{
-        display: none;
+    .degree-name{
+        color: #FFFFFF;
     }
 
     .nav-list{
@@ -283,8 +283,11 @@ h1,h2,h3,h4, li, ul, p{
         flex-direction: column;
     }
 
+    .institution-container{
+        padding-right: 10%;
+    }
     .entry-list{
-        width: 90%;
+        width: 100%;
     }
 
     .project-card{
@@ -294,10 +297,7 @@ h1,h2,h3,h4, li, ul, p{
 }
 
 @media(max-width: 500px){
-    .entry-list{
-        display: none;
-        width: 100%;
-    }
+
 }
 
 @media(max-width: 300px){
