@@ -1,83 +1,188 @@
 body{
-    background-color: #1C2541;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+    background-color: #161616;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-family: 'IBM Plex Sans';
 }
 
-h1, h2, h3, h4, p, ul, li{
+h1,h2,h3,h4, li, ul, p{
     margin: 0;
     padding: 0;
+    font-size: 1em;
+    font-weight: 300;
 }
 
-.nav-container{
+
+.nav{
+    padding: 2.5em 20vw 0 20vw;
     display: flex;
     justify-content: space-between;
-    background-color: #0B132B;
-
     align-items: center;
-    padding: 0.5em 1.5em 0.5em 1.5em;
+
 }
-.nav-home-container{
-    display:flex;
+
+.nav-list{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-element{
+    margin: 0 0.5em;
+    border-bottom: solid 3px #161616;
+}
+
+.nav-name{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.nav-name:hover,.nav-list-element:hover{
+    border-bottom: inset 3px;
+    cursor:pointer;
+    transition: 0.1s;
+
+    border-color: #e8daff;
+}
+
+.image-frame{
+    width: 280px;
+    height: 280px;
+    overflow: hidden;
+
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    border-radius: 0 0 0 50%;
+
+    box-shadow: 0.4em -0.4em 0em 0.4em #8a3ffc,
+                -0.4em 0.4em 0em 0.4em #a56eff
+    ;
+
+    /*
+    border-radius: 50%;
+    border: 5px solid #DD1155;
+    
+
+    box-shadow: 0 0.5em 1em 0.01em black;
+    */
 }
 
-.nav-home-container:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.image-frame:hover{
+    box-shadow: 0.6em -0.6em 0em 0.6em #8a3ffc,
+                -0.6em 0.6em 0em 0.6em #a56eff;
+    ;
+    transition: 0.3s;
+
+
+    border: turquoise 2px ;
 }
 
-.nav-home-icon{
-    height: 2.5em;
-    width: 2.5em;
-    margin-right: 0.5em
+.image-frame:active{
+    -ms-transform-origin-x: 10rem;
+    box-shadow: 0.3em -0.3em 0em 0.3em #8a3ffc,
+                -0.3em 0.3em 0em 0.3em #a56eff
+    ;
+    transition: 0.3s;
 }
 
-.nav-link-list{
-    display: flex;
-    list-style-type: none;
+.image{
+    height: auto;
+    width: 150%
 }
 
-.nav-link-list-element{
-    margin: 0 0.25em 0 0.25em;
+.image:hover{
+    width:200%;
+    transition: 0.3s;
+}
+/*
+.image-frame:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
-.nav-link-list-element:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.image-frame:active{
+    transform: scale(0.97);
+    transition: 0.2s;
 }
+*/
 
-.name-contact{
+
+.content{
+    margin: 4em 20vw 0 20vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact-box{
-    border: 1px solid white;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mission-statement{
+    margin: 2em 1em 1em 1em;
 
+    font-size: 1.4em;
 
-}
-
-.contact-box-list{
-    list-style-type: none;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.mission-disclaimer{
+    font-size: 0.8em;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.contact{
-    font-weight: 100;
-    font-style: italic;
+.external-links-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.external-link{
+    margin: 1.5em;
+}
+
+.external-link-icon{
+    width:20px;
+    height: 20px;
+}
+
+.external-link:hover{
+    cursor:pointer;
+}
+
+@media(max-width:1000px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-list-element{
+        margin: 0.2em 0;
+    }
+    .content{
+        margin: 10vh 10vw;
+    }
+
+    .image-frame{
+        width: 200px;
+        height: 200px;
+    }
 }

@@ -1,0 +1,307 @@
+body{
+    background-color: #161616;
+    color: white;
+    font-family: 'IBM Plex Sans';
+}
+
+h1,h2,h3,h4, li, ul, p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+.nav{
+    padding: 2.5em 20vw 0em 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-list{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-element{
+    margin: 0 0.5em;
+}
+
+.nav-name{
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 3px solid #161616
+}
+
+.nav-name:hover,.nav-list-element:hover{
+    border-bottom: inset 3px;
+    cursor:pointer;
+    transition: 0.1s;
+}
+
+.content{
+    margin: 4em 20vw;
+}
+
+
+
+
+.timeline-container{
+    border-left : 5px solid;
+    background-color: #262626;
+    border-color: #be95ff;
+
+    /*border-radius: 0 10px 10px 0;*/
+}
+
+.institution-container{
+    margin: 2em;
+    padding: 1em 0;
+}
+
+.date{
+    font-weight: 300;
+    color: #a8a8a8
+}
+
+.section{
+    margin: 2em 0;
+}
+
+.section-header{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.degree-name{
+    color: #a8a8a8;
+}
+
+.entry-list{
+    margin: 0.5em;
+    width: 80%;
+}
+
+.entry-list-element{
+    margin: 0.25em 1em;
+    
+}
+
+.entry-body{
+    margin: 0;
+    font-weight: 300;
+}
+
+.skill-bar-background{
+    width: 48vw;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.skill-bar-foreground{
+    width: 90%;
+    height: 1em;
+    border-radius: 10px;
+    background-color: #DD1155;
+
+    transition: 1s;
+}
+
+
+
+/*FOR PROJECTS*/
+
+.project-card{
+    width: 32%;
+    overflow: hidden;
+    /*border: 1px solid #a8a8a8;
+    border-radius: 20px;
+    */
+    background-color: #262626;
+    margin: 0.1em;
+    
+}
+
+.project-card:hover{
+    translate: 0 -5px;
+    transition: 0.5s;
+
+    box-shadow: 0px 5px 20px black ;
+
+    border-color: #f1c21b;
+    
+}
+
+.project-card:hover .thumbnail-container{
+    transition: 0.5s;
+    border-color: #f1c21b;
+}
+
+.project-card:hover .text-container .position{
+    transition: 0.5s;
+    color: #f1c21b;
+}
+
+.project-card:hover .bubble-container .bubble-list .bubble{
+    transition: 0.5s;
+    border-color: #f1c21b;
+}
+
+.project-card:hover .bubble-container .bubble-list .bubble .bubble-text{
+    transition: 0.5s;
+    color: #f1c21b;
+}
+
+.header{
+    font-weight: 300;
+}
+
+.position{
+    color: #a8a8a8; 
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.body{
+    margin:0; 
+    font-weight: 300;
+}
+
+.thumbnail-container{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*border-bottom: 1px solid #a8a8a8;*/
+}
+
+.thumbnail{
+    width: 120%;
+    object-fit: cover;
+}
+
+.text-container{
+    padding: 0.5em 20% 0.5em 1em;
+}
+
+.bubble-container{
+    padding: 0.5em 1em;
+}
+
+.bubble-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    border: 1px solid #be95ff;
+    border-radius: 20px;
+    padding: 0.25em 0.5em;
+    margin: 0.1em 0.1em;
+}
+
+.bubble-text{
+    color: #be95ff;
+    font-weight: 300;
+
+    font-size: 0.8em;
+
+}
+
+.project-list{
+    margin:2em 0 1em 0;
+
+    display:flex;
+}
+
+.place-time-container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+.external-links-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.external-link{
+    margin: 1.5em;
+}
+
+.external-link-icon{
+    width:20px;
+    height: 20px;
+}
+
+.external-link:hover{
+    cursor:pointer;
+}
+
+
+@media(max-width: 1000px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+    .place-time-container{
+        flex-direction: column;
+    }
+
+    .date{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-list-element{
+        margin: 0.2em 0;
+    }
+    .content{
+        margin: 10vh 20vw
+    }
+
+    .project-list{
+        flex-direction: column;
+    }
+
+    .entry-list{
+        width: 90%;
+    }
+
+    .project-card{
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+
+@media(max-width: 500px){
+    .entry-list{
+        display: none;
+        width: 100%;
+    }
+}
+
+@media(max-width: 300px){
+    .section-header{
+        font-size: 1.2em;
+    }
+}
