@@ -83,7 +83,6 @@ p{
 .main-image-frame{
     height: 200px;
     width: 30%;
-    background-color: aqua;
     display: flex;
     overflow: hidden;
     justify-content: center;

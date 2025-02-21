@@ -84,7 +84,6 @@ p{
 .main-image-frame{
     height: 200px;
     width: 30%;
-    background-color: aqua;
     display: flex;
     overflow: hidden;
     justify-content: center;
@@ -144,19 +143,28 @@ p{
         margin: 0.2em 0;
     }
     .content{
-        margin: 10vh 20vw
+        margin: 10vh 1em
     }
 
     .content-text{
-        margin-right: 5vw;
+        margin-right: 10vw;
+    }
+
+    .mission-tab{
+        flex-direction: column-reverse;
     }
 
     .main-image-frame{
-        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-image{
+        width: 100%;
+        height: auto;
     }
 
     .mission-statement{
-        width: 100%;
+        width: 85%;
         padding-right: 1em;
     }
 
