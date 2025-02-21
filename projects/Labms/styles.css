@@ -1,0 +1,167 @@
+body{
+    background-color: #161616;
+    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Sans';
+}
+
+h1,h2,h3,h4, ul, p{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+p{
+    margin: 0;
+    font-size: 1em;
+}
+
+
+.nav{
+    padding: 2.5em 20vw 0em 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-list{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-element{
+    margin: 0 0.5em;
+}
+
+li{
+    margin-left: 1em;
+}
+
+
+.nav-name{
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 3px solid #161616;
+}
+
+.nav-name:hover,.nav-list-element:hover{
+    cursor:pointer;
+    transition: 0.1s;
+    border-bottom: inset 3px #e8daff;
+}
+
+.content{
+    margin: 4em 20vw 5em 20vw;
+}
+
+.content-text{
+    margin-right: 40%;
+}
+
+.section-header{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.section-subheader{
+    margin: 2em 0 1em 0;
+
+    font-size: 1.5em;
+}
+
+.image-frame-1{
+    width: 100%;
+    height: 150px; 
+    overflow:hidden;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-image-frame{
+    height: 200px;
+    width: 30%;
+    background-color: aqua;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; 
+}
+
+.main-image{
+    height: 150%;
+}
+
+.external-links-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.external-link{
+    margin: 1.5em;
+}
+
+.external-link-icon{
+    width:20px;
+    height: 20px;
+}
+
+.external-link:hover{
+    cursor:pointer;
+}
+
+.mission-statement{
+    width: 60%;
+    padding: 1em 1em 1em 1em;
+}
+
+.mission-tab{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #262626; 
+    margin-bottom: 2em; 
+    padding: 0;
+}
+
+
+@media(max-width: 1000px){
+    .nav{
+        display:flex;
+        flex-direction: column;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-list-element{
+        margin: 0.2em 0;
+    }
+    .content{
+        margin: 10vh 20vw
+    }
+
+    .content-text{
+        margin-right: 5vw;
+    }
+
+    .main-image-frame{
+        display: none;
+    }
+
+    .mission-statement{
+        width: 100%;
+        padding-right: 1em;
+    }
+
+}
