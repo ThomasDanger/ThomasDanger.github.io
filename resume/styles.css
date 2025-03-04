@@ -81,6 +81,12 @@ h1,h2,h3,h4, li, ul, p{
     font-weight: 300;
 }
 
+.section-subheader{
+    margin: 2em 0 1em 0;
+
+    font-size: 1.5em;
+}
+
 .degree-name{
     color: #a8a8a8;
 }
@@ -120,13 +126,12 @@ h1,h2,h3,h4, li, ul, p{
 /*FOR PROJECTS*/
 
 .project-card{
-    width: 32%;
     overflow: hidden;
     /*border: 1px solid #a8a8a8;
-    border-radius: 20px;
-    */
+    border-radius: 20px;*/
     background-color: #262626;
-    margin: 0.1em;
+    height: 100%;
+    position: relative;
     
 }
 
@@ -184,6 +189,7 @@ h1,h2,h3,h4, li, ul, p{
     justify-content: center;
     align-items: center;
 
+    position: relative;
     /*border-bottom: 1px solid #a8a8a8;*/
 }
 
@@ -220,10 +226,27 @@ h1,h2,h3,h4, li, ul, p{
 
 }
 
-.project-list{
-    margin:2em 0 1em 0;
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    display:flex;
+.project-list-element{
+    list-style-type: none;
+    width: 32%;
+    margin: 1em 0.1em;
+}
+
+.watermark{
+    height:25px;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+
+    background-color: #161616;
+    border: 1px solid #be95ff;
+    border-radius: 5px;
+    padding: 0.3em 0.5em;
 }
 
 .place-time-container{
@@ -282,7 +305,6 @@ h1,h2,h3,h4, li, ul, p{
     .project-list{
         flex-direction: column;
     }
-
     .institution-container{
         padding-right: 10%;
     }
@@ -290,9 +312,8 @@ h1,h2,h3,h4, li, ul, p{
         width: 100%;
     }
 
-    .project-card{
+    .project-list-element{
         width: 100%;
-        margin: 1em 0;
     }
 }
 

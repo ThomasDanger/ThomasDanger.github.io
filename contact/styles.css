@@ -15,9 +15,14 @@ p{
     font-size: 1em;
 }
 
+.section-header{
+    font-size: 2em;
+    margin: 0 0 1em 0;
+}
+
 
 .nav{
-    padding: 5vh 20vw 0 20vw;
+    padding: 2.5em 20vw 0 20vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,6 +47,8 @@ p{
 .nav-name{
     font-size: 1.2em;
     font-weight: 900;
+
+    border-bottom: 3px solid #161616;
 }
 
 .nav-name:hover,.nav-list-element:hover{
@@ -51,34 +58,44 @@ p{
 }
 
 .content{
-    margin: 10vh 20vw;
+    margin: 4em 20vw 10vh 20vw;
 }
 
 .contact-form{
-    border: 1px solid #a8a8a8;
-
+    margin: 2em 0;
     border-radius: 1px;
-
     padding: 1em;
+    background-color: #262626;
 }
 
-.field{
+input, textarea, button {
+    outline: none;
+    border: 2px solid #ccc; /* Default border */
 }
 
 label{
     font-weight: 300;
     color: #ffffff;
+    font-size: 1.2em;
 }
 
 input[type=text]{
-    margin-bottom: 1em;
+    margin: 1em 0 2em 0;
+
+    font-size: 1em;
     width: 100%;
-    background-color: #161616;
+    background-color: #262626;
 
     border: none;
     border-bottom: 1px solid #a8a8a8;
 
     color: white;
+
+}
+
+input[type=text]:focus{
+    border-bottom: 1px solid #be95ff;
+    transition: 0.1s;
 }
 
 
