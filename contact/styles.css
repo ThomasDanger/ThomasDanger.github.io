@@ -61,43 +61,6 @@ p{
     margin: 4em 20vw 10vh 20vw;
 }
 
-.contact-form{
-    margin: 2em 0;
-    border-radius: 1px;
-    padding: 1em;
-    background-color: #262626;
-}
-
-input, textarea, button {
-    outline: none;
-    border: 2px solid #ccc; /* Default border */
-}
-
-label{
-    font-weight: 300;
-    color: #ffffff;
-    font-size: 1.2em;
-}
-
-input[type=text]{
-    margin: 1em 0 2em 0;
-
-    font-size: 1em;
-    width: 100%;
-    background-color: #262626;
-
-    border: none;
-    border-bottom: 1px solid #a8a8a8;
-
-    color: white;
-
-}
-
-input[type=text]:focus{
-    border-bottom: 1px solid #be95ff;
-    transition: 0.1s;
-}
-
 
 @media(max-width: 1000px){
     .nav{
