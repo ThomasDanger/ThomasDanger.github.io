@@ -130,6 +130,124 @@ li{
     padding: 0;
 }
 
+.issue-container{
+    margin: 0.5rem 0;
+    background-color: black;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    display: flex;
+    border-radius: 10px;
+}
+
+/*
+.issue-container:hover{
+    background-color: #161616;
+    cursor: pointer
+}
+
+.issue-container:hover .issue-title{
+    text-decoration: underline;
+    color: #78a9ff;
+}
+*/
+
+.issue-title-bubble{
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.issue-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0.25em 0;
+}
+
+.issue-content{
+    width: 80%;
+}
+
+.issue-subtext{
+    color:#8d8d8d;
+    font-size: 0.9rem;
+    margin: 0.25em 0;
+}
+
+.bubble-list{
+    display: flex;
+}
+
+.issue-bubble-frontend{
+    background-color: #1c0f30;
+    border: 1px solid #be95ff;
+    border-radius: 20px;
+    padding: 0.2em 0.5rem;
+
+    margin: 0 0.25em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.issue-bubble-text-frontend{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #be95ff;
+}
+
+.issue-bubble-backend{
+    font-size: 0.9em;
+    background-color: #2a0a18;
+    border: 1px solid #ff7eb6;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+
+    margin: 0 0.25em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.issue-bubble-text-backend{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #ff7eb6;
+}
+
+.issue-bubble-devops{
+    font-size: 0.9em;
+    background-color: #071908;
+    border: 1px solid #42be65;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+
+    margin: 0 0.25em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.issue-bubble-text-devops{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #42be65;
+}
+
+.issue-description{
+    background-color: black;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    display: flex;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+
 
 @media(max-width: 1000px){
     .nav{
@@ -147,7 +265,7 @@ li{
         margin: 0.2em 0;
     }
     .content{
-        margin: 10vh 1em
+        margin: 10vh 1rem
     }
 
     .content-text{
