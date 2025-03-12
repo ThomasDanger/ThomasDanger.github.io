@@ -238,6 +238,26 @@ li{
     color: #42be65;
 }
 
+.issue-bubble-size{
+    font-size: 0.9em;
+    background-color: #2d0709;
+    border: 1px solid #ff8389;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+
+    margin: 0 0.25em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.issue-bubble-text-size{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #ff8389;
+}
+
 .issue-description{
     background-color: black;
     border: 1px solid white;
