@@ -164,18 +164,6 @@ li{
     border-radius: 10px;
 }
 
-/*
-.issue-container:hover{
-    background-color: #161616;
-    cursor: pointer
-}
-
-.issue-container:hover .issue-title{
-    text-decoration: underline;
-    color: #78a9ff;
-}
-*/
-
 .issue-title-bubble{
     display: flex;
     align-items: center;
