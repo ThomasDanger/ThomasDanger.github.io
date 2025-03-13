@@ -137,35 +137,7 @@ p{
     
 }
 
-.project-card:hover{
-    translate: 0 -5px;
-    transition: 0.5s;
 
-    box-shadow: 0px 5px 20px black ;
-
-    border-color: #f1c21b;
-    
-}
-
-.project-card:hover .thumbnail-container{
-    transition: 0.5s;
-    border-color: #f1c21b;
-}
-
-.project-card:hover .text-container .position{
-    transition: 0.5s;
-    color: #f1c21b;
-}
-
-.project-card:hover .bubble-container .bubble-list .bubble{
-    transition: 0.5s;
-    border-color: #f1c21b;
-}
-
-.project-card:hover .bubble-container .bubble-list .bubble .bubble-text{
-    transition: 0.5s;
-    color: #f1c21b;
-}
 
 .header{
     font-weight: 300;
