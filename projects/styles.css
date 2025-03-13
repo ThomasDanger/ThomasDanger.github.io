@@ -154,7 +154,8 @@ h1,h2,h3,h4, li, ul, p{
 }
 
 .thumbnail{
-    width: 150%;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
