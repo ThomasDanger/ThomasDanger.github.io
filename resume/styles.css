@@ -334,7 +334,9 @@ h1,h2,h3,h4, li, ul, p{
 }
 
 @media(max-width: 500px){
-
+    .institution-icon{
+        display: none;
+    }
 }
 
 @media(max-width: 300px){
