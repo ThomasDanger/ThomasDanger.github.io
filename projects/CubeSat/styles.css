@@ -15,6 +15,31 @@ p{
     font-size: 1em;
 }
 
+.bubble-container{
+    padding: 0;
+    height: 100%;
+}
+
+.bubble-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bubble{
+    border: 1px solid #be95ff;
+    border-radius: 20px;
+    padding: 0.25em 0.5em;
+    margin: 0.1em 0.1em;
+}
+
+.bubble-text{
+    color: #be95ff;
+    font-weight: 300;
+
+    font-size: 0.8em;
+
+}
+
 
 .nav{
     padding: 2.5em 20vw 0em 20vw;
