@@ -95,6 +95,7 @@ h1,h2,h3,h4, li, ul, p{
 .section-header{
     font-size: 2em;
     font-weight: 300;
+    margin-bottom: 1em;
 }
 
 .section-subheader{
