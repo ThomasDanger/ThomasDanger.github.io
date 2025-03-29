@@ -97,55 +97,67 @@
             </p>
 
             <h1 class="section-subheader">Project Proposal</h1>
-            <p>
-                <ol>
-                    <li>
-                        <h1>Frontend</h1>
-                        <ul>
-                            <li>React in TypeScript, Material UI and QUADS for User Interface</li>
-                            <li>Charts and graphs powered by Highcharts</li>
-                            <li>Widget-based design so users can customize based on their need</li>
-                            <li>REST for HTTP requests and Websocket</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h1>Backend</h1>
-                        <ul>
-                            <li>Express in TypeScript, support both HTTP and Web Socket Protocol</li>
-                            <li>Integrate Google Analytics 4, Microsoft Clarity, and Looker Studio API to retrieve data from the server</li>
-                            <li>Middleware to fetch, process, and cache data for efficient access</li>
-                            <li>Store user preferences and data in PostgreSQL, using Prisma as ORM for schema management and efficient querying</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h1>AI Powered Insights</h1>
-                        <ul>
-                            <li>LangChain to support multiple models (ChatGPT, Gemini, etc.)</li>
-                            <li>Predictive analytics and anomaly spotting historical data to identify patterns over time and detect unusual behaviors or data points</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h1>Testing</h1>
-                        <ul>
-                            <li>Unit testing (Jest), end-to-end testing (Cypress), linting testing (eslint)</li>
-                            <li>Static analysis and vulnerability scan (SonarQube)</li>
-                            <li>Use CI/CD pipeline for testing, require passing for branch merging</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h1>Deployment</h1>
-                        <ul>
-                            <li>The application will work with Docker</li>
-                            <li>Use CI/CD pipeline to automate building Docker image and push to image registry</li>
-                        </ul>
-                    </li>
-                </ol>
-            </p>
+            <ol class="proposal-list">
+                <li class="proposal-list-element">
+                    <h1 class="proposal-header">Frontend</h1>
+                    <ul class="proposal-sublist">
+                        <li>React in TypeScript, Material UI and QUADS for User Interface</li>
+                        <li>Charts and graphs powered by Highcharts</li>
+                        <li>Widget-based design so users can customize based on their need</li>
+                        <li>REST for HTTP requests and Websocket</li>
+                    </ul>
+                </li>
+                <li class="proposal-list-element">
+                    <h1 class="proposal-header">Backend</h1>
+                    <ul class="proposal-sublist">
+                        <li>Express in TypeScript, support both HTTP and Web Socket Protocol</li>
+                        <li>Integrate Google Analytics 4, Microsoft Clarity, and Looker Studio API to retrieve data from the server</li>
+                        <li>Middleware to fetch, process, and cache data for efficient access</li>
+                        <li>Store user preferences and data in PostgreSQL, using Prisma as ORM for schema management and efficient querying</li>
+                    </ul>
+                </li>
+                <li class="proposal-list-element">
+                    <h1 class="proposal-header">AI Powered Insights</h1>
+                    <ul class="proposal-sublist">
+                        <li>LangChain to support multiple models (ChatGPT, Gemini, etc.)</li>
+                        <li>Predictive analytics and anomaly spotting historical data to identify patterns over time and detect unusual behaviors or data points</li>
+                    </ul>
+                </li>
+                <li class="proposal-list-element">
+                    <h1 class="proposal-header">Testing</h1>
+                    <ul class="proposal-sublist">
+                        <li>Unit testing (Jest), end-to-end testing (Cypress), linting testing (eslint)</li>
+                        <li>Static analysis and vulnerability scan using SonarQube</li>
+                        <li>Tested automated using CI/CD pipeline, requiring passing tests to merge with main branch</li>
+                    </ul>
+                </li>
+                <li class="proposal-list-element">
+                    <h1 class="proposal-header">Deployment</h1>
+                    <ul class="proposal-sublist">
+                        <li>Built using multi-stage Dockerfile, building the frontend and backend separately</li>
+                        <li>Docker Image Build Automated using CI/CD Pipeline</li>
+                    </ul>
+                </li>
+            </ol>
         
-
             <h1 class="section-subheader">Issues and Pull Requests</h1>
         </div>
-            
+
+        <div class="issue-container">
+            <div class="issue-closed-icon-container">
+            </div>
+            <div class="issue-content">
+                <div class="issue-title-bubble">
+                    <h1 class="issue-title">Implement AI Chat Frontend</h1>
+                    <ul class="bubble-list">
+                        <div class="issue-bubble-frontend"><h1 class="issue-bubble-text-frontend">frontend</h1></div>
+                        <div class="issue-bubble-size"><h1 class="issue-bubble-text-size">size/M</h1></div>
+                    </ul>    
+                </div>
+
+                <h2 class="issue-subtext">#66 • ProjectLeader opened X days ago</h2>
+            </div>
+        </div>
         <div class="issue-container">
             <div class="issue-closed-icon-container">
             </div>
@@ -159,7 +171,7 @@
                     </ul>    
                 </div>
 
-                <h2 class="issue-subtext">#46 • ProjectLeader opened 1 day ago</h2>
+                <h2 class="issue-subtext">#46 • ProjectLeader opened X days ago</h2>
             </div>
         </div>
 
@@ -175,7 +187,7 @@
                     </ul>    
                 </div>
 
-                <h2 class="issue-subtext">#27 • ProjectLeader opened 3 day ago</h2>
+                <h2 class="issue-subtext">#27 • ProjectLeader opened X days ago</h2>
             </div>
         </div>
     </div>
